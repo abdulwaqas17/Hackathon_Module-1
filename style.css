@@ -255,7 +255,20 @@ nav{
     justify-content: space-between;
     border-bottom-width: 7px;
     gap: 30px;
+    transition: 0.3s ease;
     /* flex-wrap: wrap; */
+
+}
+
+.cart-one:hover{
+
+    transform: translateY(-15px);
+
+}
+
+.cart-two:hover{
+
+    transform: translateY(-15px);
 
 }
 
@@ -396,6 +409,48 @@ nav{
 
 }
 
+
+
+
+/* styling for FAQS section start */
+.FAQS-box{
+
+    background-color: var(--green);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    border-bottom-width: 6px;
+    margin-bottom: 40px;
+
+}
+
+.FAQS-box-top{
+
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding-bottom: 30px;
+
+}
+
+.FAQS-box b{
+
+    padding-right: 10px;
+
+}
+
+.FAQS-box-bottom{
+
+    padding-top: 30px;
+    border-top: 1px solid black;
+
+}
+
+.FAQS-box-bottom p{
+
+    line-height: 1.4rem;
+
+}
 
 
 
