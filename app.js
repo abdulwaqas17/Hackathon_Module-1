@@ -13,6 +13,8 @@ function showOne(){
 
     `;
 
+    document.getElementById('down-keyOne').innerHTML= `–`;
+
 }
 
 
@@ -33,6 +35,8 @@ function showTwo(){
 
     document.getElementById('FAQS-paraTwo').innerHTML = para;
 
+    document.getElementById('down-keyTwo').innerHTML= `–`;
+
 }
 
 
@@ -48,6 +52,8 @@ function showThree(){
     </p>
 
     `;
+
+    document.getElementById('down-keyThree').innerHTML= `–`;
 
 
 }
@@ -69,6 +75,8 @@ function showFour(){
 
     `;
 
+    document.getElementById('down-keyFour').innerHTML= `–`;
+
 }
 
 
@@ -88,7 +96,7 @@ function showFive(){
 
     `;
 
-    
+    document.getElementById('down-keyFive').innerHTML= `–`;
 
 }
 

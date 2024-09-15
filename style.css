@@ -386,7 +386,7 @@ nav{
 .working-bar{
 
     gap: 40px;
-    margin-block: 100px 50px;
+    margin-block: 80px;
     align-items: center;
     
 
@@ -428,8 +428,19 @@ nav{
 
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
     padding-bottom: 30px;
+
+}
+
+.FAQS-box-top p {
+
+    font-size: 1.5rem;
+
+} 
+
+.FAQS-box-top p b,.FAQS-box-top .down-key{
+
+    font-size: 2rem;
 
 }
 
@@ -449,13 +460,36 @@ nav{
 .FAQS-box-bottom p{
 
     line-height: 1.4rem;
+    font-size: 1.1rem;
 
 }
 
 
+/* styling for contact-us section start */
+.contact-us{
 
+    gap: 40px;
+    margin-block: 100px 50px;
+    align-items: center;
+    
 
+}
 
+.contact{
+
+    padding: 5px 10px;
+    background-color: var(--green);
+    border-radius: 10px;
+    font-size: 1.3rem;
+
+}
+
+.contact-us p{
+
+    line-height: 1.5rem;
+    width: 400px;
+
+}
 
 
 
@@ -630,5 +664,50 @@ nav{
         flex-direction: column;
         width: 100%;
         text-align: center;
+
+    }
+
+    .working-bar p{
+
+        width: 100%;
+
+    }
+
+    .FAQS-box-top p {
+
+        font-size: 1.2rem;
+    
+    } 
+    
+    .FAQS-box-top p b,.FAQS-box-top .down-key{
+    
+        font-size: 1.6rem;
+    
+    }
+
+    .FAQS-box-bottom p{
+
+        font-size: 0.8rem;
+    }
+
+    .FAQS-box b{
+
+        padding-right: 5px;
+
+    }
+
+    
+    .contact-us {
+
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .contact-us p{
+
+        width: 100%;
+
     }
 }
