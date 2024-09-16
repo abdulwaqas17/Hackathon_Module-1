@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
@@ -9,6 +10,12 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -276,141 +283,66 @@
 
 
             <!-- FAQS is here  -->
-            <section class="FAQS">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p>
+                                <b>01</b>  Consultation
+                            </p>
 
-                <!-- ----- one -----  -->
-                <div class="FAQS-one FAQS-box">
-
-
-                    <div class="FAQS-box-top flex" onclick="showOne()">
-                        <p>
-                            <b>01</b> Consultation
-                        </p>
-
-                        <div class="down-key" id="down-keyOne">
-                            +
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                During the initial consultation, we will discuss your business goals and objectives,
+                                target audience, and current marketing efforts. This will allow us to understand your
+                                needs and tailor our services to best fit your requirements.
+                            </p>
                         </div>
-
                     </div>
-
-                    <div class="FAQS-box-bottom">
-
-                        <p id="FAQS-paraOne">
-
-
-
-                        </p>
-
-                    </div>
-
                 </div>
-
-                <!-- ----- two -----  -->
-                <div class="FAQS-one FAQS-box">
-
-                    <div class="FAQS-box-top flex" onclick="showTwo()">
-                        <p>
-                            <b>02</b> Research and Strategy Development
-                        </p>
-
-                        <div class="down-key" id="down-keyTwo">
-                            +
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <p>
+                                <b>02</b> Continual Improvement
+                            </p>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                During the initial consultation, we will discuss your business goals and objectives,
+                                target audience, and current marketing efforts. This will allow us to understand your
+                                needs and tailor our services to best fit your requirements.
+                            </p>
                         </div>
-
                     </div>
-
-                    <div class="FAQS-box-bottom">
-
-                        <p id="FAQS-paraTwo">
-
-
-
-                        </p>
-
-                    </div>
-
                 </div>
-
-                <!-- ----- three -----  -->
-                <div class="FAQS-one FAQS-box">
-
-                    <div class="FAQS-box-top flex" onclick="showThree()">
-                        <p>
-                            <b>03</b> Implementation
-                        </p>
-
-                        <div class="down-key" id="down-keyThree">
-                            +
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <p>
+                                <b>03</b> Implementation
+                            </p>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                During the initial consultation, we will discuss your business goals and objectives,
+                                target audience, and current marketing efforts. This will allow us to understand your
+                                needs and tailor our services to best fit your requirements.
+                            </p>
                         </div>
-
                     </div>
-
-                    <div class="FAQS-box-bottom">
-
-                        <p id="FAQS-paraThree">
-
-
-
-                        </p>
-
-                    </div>
-
                 </div>
-
-                <!-- ----- Four -----  -->
-                <div class="FAQS-one FAQS-box">
-
-                    <div class="FAQS-box-top flex" onclick="showFour()">
-                        <p>
-                            <b>04</b> Monitoring and Optimization
-                        </p>
-
-                        <div class="down-key" id="down-keyFour">
-                            +
-                        </div>
-
-                    </div>
-
-                    <div class="FAQS-box-bottom">
-
-                        <p id="FAQS-paraFour">
-
-
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <!-- ----- Five -----  -->
-                <div class="FAQS-one FAQS-box">
-
-                    <div class="FAQS-box-top flex" onclick="showFive()">
-                        <p>
-                            <b>05</b> Reporting and Communication
-                        </p>
-
-                        <div class="down-key" id="down-keyFive">
-                            +
-                        </div>
-
-                    </div>
-
-                    <div class="FAQS-box-bottom">
-
-                        <p id="FAQS-paraFive">
-
-
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-            </section>
+            </div>
 
 
             <!-- working bar is here  -->
@@ -444,22 +376,22 @@
 
                             <label for="name">Name*</label> <br>
                             <input type="text" name="name" placeholder="Name" id="name">
-                            
+
                             <label for="name">Email</label> <br>
                             <input type="text" name="Email" placeholder="Email" id="Email">
-                            
+
                             <label for="name">Message</label> <br>
                             <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-    
+
                             <button class="form-button">
                                 Send Message
                             </button>
-    
+
                         </div>
-    
+
                     </form>
 
-                    
+
 
                 </div>
 
@@ -471,120 +403,120 @@
 
         </div>
 
-        
-            <!-- footer is here  -->
-            <footer>
 
-                <div class="footer-header flex">
+        <!-- footer is here  -->
+        <footer>
 
-                    <div class="footer-logo">
-                        <a href="#"><img src="./assests/Logo (1).png" alt="footer logo"></a>
+            <div class="footer-header flex">
+
+                <div class="footer-logo">
+                    <a href="#"><img src="./assests/Logo (1).png" alt="footer logo"></a>
+                </div>
+
+                <div class="footer-links">
+
+                    <ul class="flex">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Use Cases</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blogs</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-icons flex">
+
+                    <div class="footer-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
                     </div>
 
-                    <div class="footer-links">
-
-                        <ul class="flex">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Use Cases</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Blogs</a></li>
-
-                        </ul>
-
+                    <div class="footer-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
                     </div>
 
-                    <div class="footer-icons flex">
-
-                        <div class="footer-icon">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-
-                        <div class="footer-icon">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </div>
-
-                        <div class="footer-icon">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-
+                    <div class="footer-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </div>
 
                 </div>
 
-                <div class="footer-mid flex">
+            </div>
 
-                    <div class="footer-mid-left">
+            <div class="footer-mid flex">
 
-                        <h3>
-                            <span>Contact Us :</span>
-                        </h3>
+                <div class="footer-mid-left">
 
-                        <p>
-                            Email : <a href="#">waqas123@gmail.com</a>
-                        </p>
+                    <h3>
+                        <span>Contact Us :</span>
+                    </h3>
 
-                        <p>
-                            Phone : <a href="#">123-456-7890</a>
-                        </p>
+                    <p>
+                        Email : <a href="#">waqas123@gmail.com</a>
+                    </p>
 
-                        <p>
-                            Address : <a href="#">Karachi, Pakistan</a>
-                        </p>
-                    </div>
+                    <p>
+                        Phone : <a href="#">123-456-7890</a>
+                    </p>
 
-                    <div class="footer-mid-right flex">
+                    <p>
+                        Address : <a href="#">Karachi, Pakistan</a>
+                    </p>
+                </div>
 
-                        <input type="text" name="Email" placeholder="Email">
-                        <button class="footer-button">Send a Email <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="footer-mid-right flex">
 
-                    </div>
+                    <input type="text" name="Email" placeholder="Email">
+                    <button class="footer-button">Send a Email <i class="fa-solid fa-arrow-right"></i></button>
 
                 </div>
 
-                <div class="footer-bottom-right flex">
+            </div>
 
-                    <div class="footer-bottom-right-one">
+            <div class="footer-bottom-right flex">
 
-                        <p>
-                            Designed by : Muhammad Waqas
-                        </p>
+                <div class="footer-bottom-right-one">
 
-                        <p>
-                            <i class="fa-solid fa-globe"></i> : <a href="https://waqaswebsite.netlify.app/" target="_blank">https://waqaswebsite.netlify.app/</a>
-                        </p>
+                    <p>
+                        Designed by : Muhammad Waqas
+                    </p>
 
-                    </div>
-
-                    <div class="footer-bottom-right-two">
-
-                        <p>Saylani Mass IT Traning Batch 12</p>
-                        <p>Hackathon of Module 1</p>
-
-                    </div>
-
-                    <div class="footer-bottom-right-three">
-
-                        
-                        <p>
-                            Trainer : Sheikh Ahmer Ali (Software Engineer)
-                        </p>
-
-                        <p>
-                            <i class="fa-solid fa-globe"></i> : <a href="https://skahmerali.com/" target="_blank">https://skahmerali.com/</a>
-                        </p>
-                        
-                    </div>
-
+                    <p>
+                        <i class="fa-solid fa-globe"></i> : <a href="https://waqaswebsite.netlify.app/"
+                            target="_blank">https://waqaswebsite.netlify.app/</a>
+                    </p>
 
                 </div>
 
-            </footer>
+                <div class="footer-bottom-right-two">
+
+                    <p>Saylani Mass IT Traning Batch 12</p>
+                    <p>Hackathon of Module 1</p>
+
+                </div>
+
+                <div class="footer-bottom-right-three">
+
+
+                    <p>
+                        Trainer : Sheikh Ahmer Ali (Software Engineer)
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-globe"></i> : <a href="https://skahmerali.com/"
+                            target="_blank">https://skahmerali.com/</a>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </footer>
 
     </div>
 
-
-    <script src="./app.js"></script>
 </body>
 
 </html>

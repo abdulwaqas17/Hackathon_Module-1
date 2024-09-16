@@ -410,59 +410,66 @@ nav{
 }
 
 
+ /* styling for FAQS section start */
+.accordion-item{
 
-
-/* styling for FAQS section start */
-.FAQS-box{
-
-    background-color: var(--green);
+    background-color: greenyellow !important;
     padding: 30px;
-    border-radius: 20px;
-    border: 1px solid black;
-    border-bottom-width: 6px;
+    border-radius: 20px !important;
+    border: 1px solid black !important;
+    border-bottom-width: 6px !important;
     margin-bottom: 40px;
 
-}
-
-.FAQS-box-top{
-
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
 
 }
 
-.FAQS-box-top p {
+.accordion-button{
+
+    background: greenyellow !important; 
+    border: none !important;
+    box-shadow: none !important;
+    
+
+}
+
+
+.accordion-header{
+
+    background-color: greenyellow;
+    padding-bottom: 10px;
+    border: none !important;
+
+}
+
+.accordion-header p {
 
     font-size: 1.5rem;
+    color: black !important;
 
 } 
 
-.FAQS-box-top p b,.FAQS-box-top .down-key{
+.accordion-header b{
 
+    padding-right: 10px;
     font-size: 2rem;
 
 }
 
-.FAQS-box b{
+.accordion-body{
 
-    padding-right: 10px;
-
-}
-
-.FAQS-box-bottom{
-
-    padding-top: 30px;
+    padding: 10px !important;
+    padding-top: 20px !important;
     border-top: 1px solid black;
 
 }
 
-.FAQS-box-bottom p{
+.accordion-body p{
 
     line-height: 1.4rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 
 }
+
 
 
 /* styling for contact-us section start */
@@ -524,7 +531,7 @@ form span:nth-child(1){
 
 .inputs input,textarea{
 
-    margin-block: 20px;
+    margin-block: 20px !important;
     width: 50%;
     padding: 15px;
     border-radius: 10px;
@@ -783,7 +790,7 @@ footer{
 
     .container{
 
-       margin-inline: 20px;
+       margin-inline: 30px;
 
     }
 
@@ -926,28 +933,29 @@ footer{
 
     }
 
-    .FAQS-box-top p {
+    .accordion-item{
 
-        font-size: 1.2rem;
-    
-    } 
-    
-    .FAQS-box-top p b,.FAQS-box-top .down-key{
-    
-        font-size: 1.6rem;
-    
+        padding: 20px;
     }
 
-    .FAQS-box-bottom p{
+     .accordion-header p {
+
+        font-size: 1.1rem;
+    
+    } 
+
+
+    .accordion-body p{
 
         font-size: 0.8rem;
     }
 
-    .FAQS-box b{
+    .accordion-header b{
 
         padding-right: 5px;
+        font-size: 1.6rem;
 
-    }
+    } 
 
     
     .contact-us {
@@ -1015,6 +1023,7 @@ footer{
 
         flex-direction: column;
         align-items: center;
+        padding: 0px;
 
     }
 
